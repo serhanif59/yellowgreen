@@ -9,9 +9,9 @@ CREATE TABLE
         lastName VARCHAR(45) NOT NULL,
         nickName VARCHAR(45) NOT NULL UNIQUE,
         email VARCHAR(45) NOT NULL UNIQUE,
-        avatar VARCHAR(100),
+        avatar VARCHAR(100) DEFAULT 'img_avatar.png',
         description VARCHAR(100),
-        score INT,
+        score INT DEFAULT 0,
         PRIMARY KEY(id)
     );
 
@@ -20,11 +20,11 @@ CREATE TABLE
         id INT NOT NULL AUTO_INCREMENT,
         name VARCHAR(45) NOT NULL UNIQUE,
         avatar VARCHAR(100),
-        score INT,
-        fights INT,
-        wonFights INT,
-        lostFights INT,
-        koFights INT,
+        score INT DEFAULT 0,
+        fights INT DEFAULT 0,
+        wonFights INT DEFAULT 0,
+        lostFights INT DEFAULT 0,
+        koFights INT DEFAULT 0,
         PRIMARY KEY(id)
     );
 
@@ -33,9 +33,9 @@ CREATE TABLE
         id INT NOT NULL AUTO_INCREMENT,
         name VARCHAR(45) NOT NULL UNIQUE,
         avatar VARCHAR(100),
-        cost INT,
-        gain INT,
-        successRate INT,
+        cost INT DEFAULT 0,
+        gain INT DEFAULT 0,
+        successRate INT DEFAULT 50,
         PRIMARY KEY(id)
     );
 
