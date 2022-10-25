@@ -41,9 +41,9 @@ CREATE TABLE
 
 CREATE TABLE
     IF NOT EXISTS unicorn_attack(
-        unicorne_id INT NOT,
+        unicorn_id INT NOT,
         attack_id INT NOT NULL,
         INDEX uni_att (unicorn_id, attack_id),
-        FOREIGN KEY (unicorne_Id) REFERENCES unicorne(id) ON DELETE CASCADE,
+        FOREIGN KEY (unicorn_Id) REFERENCES unicorn(id) ON DELETE CASCADE,
         FOREIGN KEY (attack_Id) REFERENCES attack(id) ON DELETE CASCADE
     );
