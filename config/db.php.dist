@@ -1,0 +1,6 @@
+<?php
+
+define('APP_DB_USER', 'user');
+define('APP_DB_PASSWORD', 'password');
+define('APP_DB_HOST', 'mysql:host=localhost');
+define('APP_DB_NAME', 'bonheur_et_pailettes');
