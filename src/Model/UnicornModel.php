@@ -27,6 +27,7 @@ class UnicornModel extends AbstractModel
 
     /**
      * Get the value of id
+     * of the Unicorn
      */
     public function getId(): int
     {
